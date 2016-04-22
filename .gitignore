@@ -17,7 +17,6 @@ coverage
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-    -----
 /node_modules
 /typings
-/dest
 
 # ----- Users Environment Variables -----
 
@@ -26,7 +25,4 @@ coverage
 # ----- Other -----
 
 node_modules
-node_modules
-/*.gitignore
-dest
 typings
