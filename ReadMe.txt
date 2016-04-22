@@ -1,0 +1,1 @@
+Code structure is based on these two site:  udemy_completeGuideToAngular2 + http://anasfirdousi.com/structuring-angular2-web-application.html
