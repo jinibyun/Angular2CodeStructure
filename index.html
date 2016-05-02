@@ -1,5 +1,6 @@
 <!doctype>
 <html>
+
 <head>
     <base href="/">
     <title>Angular 2 Boilerplate</title>
@@ -15,23 +16,31 @@
     <script src="node_modules/angular2/bundles/angular2.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <script src="node_modules/angular2/bundles/http.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dest/css/app.css">
 </head>
-<body>
-<app>Loading...</app>
 
-<script>
-    System.config({
-        packages: {
-            dest: {
-                format: 'register',
-                defaultExtension: 'js'
+<body>    
+    <app>Loading...</app>
+
+    <script>
+        // NOTE: for moment.js, refer to https://github.com/valor-software/ng2-bootstrap
+        System.config({
+            packages: {
+                dest: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            },
+            map: {
+                moment: 'node_modules/moment/moment.js'
             }
-        }
-    });
-    System.import('dest/boot')
+        });
+        System.import('dest/boot')
             .then(null, console.error.bind(console));
-</script>
+    </script>
 </body>
+
 </html>
